@@ -34,7 +34,7 @@ export default function Appointment() {
   const [phone, setPhone] = useState('');
   const [selectedDoc, setSelectedDoc] = useState(doctorId || '');
 
-  const doctor = doctors.find(d => d.id == selectedDoc);
+  const doctor = doctors.find(d => d.id === Number(selectedDoc));
 
   const handleSubmit = (e) => {
     e.preventDefault();
