@@ -7,7 +7,7 @@ import {
 } from 'lucide-react';
 
 export default function Home() {
-  const [patients, setPatients] = useState([]);
+  const [patients, setPatients] = useState<any[]>([]);
   const [services, setServices] = useState([]);
   const [currentPatient, setCurrentPatient] = useState(0);
 
