@@ -53,10 +53,8 @@ const [currentPatient, setCurrentPatient] = useState<number>(0);
   ];
 
   const handleReadMore = (id: number) => {
-  const service = services.find((s: any) => s.id === id);
-  if (service) {
-    alert(service.detail);
-  }
+  const service = services.find(s => s.id === id);
+  alert(service?.detail);
 };
 
   return (
