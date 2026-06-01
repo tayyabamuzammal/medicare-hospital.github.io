@@ -36,7 +36,7 @@ export default function Appointment() {
 
   const doctor = doctors.find(d => d.id === Number(selectedDoc));
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if(!selectedDoc || !name || !phone) {
       alert('Please fill all fields');
