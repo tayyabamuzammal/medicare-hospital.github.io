@@ -52,10 +52,12 @@ const [currentPatient, setCurrentPatient] = useState<number>(0);
     { icon: <BedSingle size={32} />, name: "VIP Rooms" },
   ];
 
-  const handleReadMore = (id) => {
-    const service = services.find(s => s.id === id);
+  const handleReadMore = (id: number) => {
+  const service = services.find((s: any) => s.id === id);
+  if (service) {
     alert(service.detail);
-  };
+  }
+};
 
   return (
     <div>
