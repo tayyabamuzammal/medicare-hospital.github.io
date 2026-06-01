@@ -8,9 +8,8 @@ import {
 
 export default function Home() {
   const [patients, setPatients] = useState<any[]>([]);
-  const [services, setServices] = useState([]);
-  const [currentPatient, setCurrentPatient] = useState(0);
-
+const [services, setServices] = useState<any[]>([]);
+const [currentPatient, setCurrentPatient] = useState<number>(0);
   useEffect(() => {
     setPatients([
       {
